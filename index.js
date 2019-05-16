@@ -8,7 +8,7 @@ client.on('message', (message) =>{
     }
 })
 client.on('message', (message) =>{
-    if(message.content == "@everyone")
+    if(message.content == "easteregg")
     {
         message.channel.send("Дароува");
     }
@@ -16,18 +16,24 @@ client.on('message', (message) =>{
 client.on('message', (message) =>{
     if(message.content == "&")
     {
-        message.channel.send("```Это мой префикс.```");
+        message.channel.send("```Это мой префикс. Для помощи напишите &help.```");
     }
 })
 client.on('message', (message) =>{
     if(message.content == "&help")
     {
-        message.channel.send("```Данный бот в Альфа тесте.```");
+        message.channel.send("```&stab - ударить противника ножом. &credits - создатели бота```");
     }
 })
 client.on('message', (message) =>{
     if(message.content == "&credits")
     {
         message.channel.send("```Comrade-создатель и владелец бота. LKfage_In3-публикатор бота и его создатель. Только для использования на Kirov Role Play Russia!```");
+    }
+})
+client.on('message', (message) =>{
+    if(message.content == "&stab")
+    {
+        message.channel.send("```Вы ударили ножом и нанесли -63 HP```");
     }
 })
